@@ -1,3 +1,6 @@
-import joke from './joke';
 import './styles/main.css';
-console.log(joke());
+
+import joke from './joke.js';
+
+const jokes = document.querySelector('.joke');
+jokes.innerHTML = joke();
